@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root {
+    --bg-collor: #fefbfd;
+    --primary-color: #0e0d0e;
+    --secundary-color: #b129c6;
+    --font: "Itim", cursive;
+}
+
+body {
+    background-color: var(--bg-collor);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    color: var(--bg-collor);
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-collor);
+    margin: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s ease;
+}
+
+.graficos-container {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 2rem;
+}
+
+.graficos-container_texto {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid var(--secundary-color);
+    border-radius: 8px;
+    background-color: rgba(177, 41, 198, 0.1);
+}
+
+span {
+    font-weight: bold;
+    color: var(--secundary-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-collor);
+    width: 100%;
+    height: 4rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .graficos-container {
+        margin: 2rem 1rem;
+    }
+}
+
